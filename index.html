@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michael Brett — AI Engineer</title>
   <meta name="description" content="AI engineer based in Ireland. Building production-grade LLM systems, RAG pipelines, and intelligent data applications for pharma, property, and data-intensive industries.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Michael Brett — AI Engineer">
+  <meta property="og:description" content="AI engineer based in Ireland. Building production-grade LLM systems, RAG pipelines, and intelligent data applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mlb6194.github.io/">
+  <meta property="og:image" content="https://mlb6194.github.io/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Michael Brett — AI Engineer">
+  <meta name="twitter:description" content="AI engineer based in Ireland. Building production-grade LLM systems, RAG pipelines, and intelligent data applications.">
+  <meta name="twitter:image" content="https://mlb6194.github.io/og-image.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
@@ -559,76 +572,6 @@
       white-space: nowrap;
     }
 
-    /* ── COMING SOON CARD ── */
-    .project-card.coming-soon {
-      opacity: 0.62;
-      background: rgba(17, 24, 39, 0.6);
-      border-color: rgba(255, 255, 255, 0.05);
-      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s, opacity 0.25s;
-    }
-
-    .project-card.coming-soon:hover {
-      opacity: 0.82;
-      border-color: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
-      transform: translateY(-2px);
-    }
-
-    .project-card.coming-soon::before {
-      display: none;
-    }
-
-    .coming-soon-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      font-family: var(--mono);
-      font-size: 11.5px;
-      font-weight: 500;
-      color: #8892A4;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 7px 14px;
-      border-radius: 6px;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      flex-shrink: 0;
-      cursor: default;
-      user-select: none;
-    }
-
-    .coming-soon-badge::before {
-      content: '';
-      display: block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #8892A4;
-      opacity: 0.6;
-      animation: pulse 2.4s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 0.4; transform: scale(1); }
-      50%       { opacity: 0.9; transform: scale(1.25); }
-    }
-
-    .project-card.coming-soon .project-number {
-      opacity: 0.5;
-    }
-
-    .project-card.coming-soon .project-title {
-      color: #B8C0D4;
-    }
-
-    .project-card.coming-soon .feature-item::before {
-      color: #8892A4;
-      opacity: 0.6;
-    }
-
-    .project-card.coming-soon .stack-tag {
-      opacity: 0.65;
-    }
 
     /* ── CONTACT ── */
     #contact {
@@ -1067,40 +1010,6 @@
           <span class="stack-tag">ChromaDB</span>
           <span class="stack-tag">Claude API</span>
           <span class="stack-tag">RAG</span>
-        </div>
-      </div>
-
-      <!-- Project 3 — Coming Soon -->
-      <div class="project-card coming-soon fade-in-up">
-        <div class="project-header">
-          <div>
-            <p class="project-number">03 / Pharma Operations</p>
-            <h3 class="project-title">Batch Release Intelligence</h3>
-            <p class="project-subtitle">Multi-agent GMP simulation · LangGraph · Decision engine</p>
-          </div>
-          <span class="coming-soon-badge">Coming Soon</span>
-        </div>
-
-        <p class="project-desc">
-          A multi-agent system that simulates the pharmaceutical GMP batch release process end-to-end. Three specialist agents run in sequence — each owning a distinct domain of the release decision — before a final Decision Agent produces a verdict with full rationale and risk level.
-        </p>
-
-        <div class="feature-list">
-          <div class="feature-item">QC Release Specialist: lab results vs. specification</div>
-          <div class="feature-item">Process Validation Engineer: manufacturing parameters</div>
-          <div class="feature-item">Qualified Person: final disposition assessment</div>
-          <div class="feature-item">Decision Agent: RELEASE / CONDITIONAL RELEASE / HOLD</div>
-          <div class="feature-item">Conditional LangGraph edge shortcuts to HOLD on sterility or endotoxin failures</div>
-          <div class="feature-item">Full rationale and risk level for every verdict</div>
-        </div>
-
-        <div class="project-stack">
-          <span class="stack-tag">Python</span>
-          <span class="stack-tag">LangGraph</span>
-          <span class="stack-tag">Claude API</span>
-          <span class="stack-tag">LangChain</span>
-          <span class="stack-tag">Streamlit</span>
-          <span class="stack-tag">Plotly</span>
         </div>
       </div>
 
