@@ -12,11 +12,11 @@
   <meta property="og:description" content="Applied AI projects with live demos — agentic systems, RAG pipelines, ML forecasting, and natural language dashboards.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mlb6194.github.io/">
-  <meta property="og:image" content="https://mlb6194.github.io/og-image.svg">
+  <meta property="og:image" content="https://mlb6194.github.io/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Michael Brett — Applied AI Projects">
   <meta name="twitter:description" content="Applied AI projects with live demos — agentic systems, RAG pipelines, ML forecasting, and natural language dashboards.">
-  <meta name="twitter:image" content="https://mlb6194.github.io/og-image.svg">
+  <meta name="twitter:image" content="https://mlb6194.github.io/og-image.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -1174,16 +1174,22 @@
         </div>
 
         <p class="project-desc">
-          A RAG system grounded in ~60 ICH, FDA, EU GMP, and EMA regulatory documents. Designed for scientists and regulatory affairs teams who need precise, citable answers from a large document corpus — not confident hallucinations. Every answer carries a confidence score and exact section citations. Fully accessible via the link above — no API key required.
+          A RAG system grounded in ~60 ICH, FDA, EU GMP, and EMA regulatory documents, built for scientists and regulatory affairs teams who need precise, auditable answers from a large document corpus. Every response is evaluated with a calibrated confidence score, grounded in direct quotes with exact section citations, and constrained to the source corpus to prevent hallucination — designed for environments where accuracy is non-negotiable and every claim must be traceable.
         </p>
 
         <div class="feature-list">
-          <div class="feature-item">~60 ICH / FDA / EU GMP / EMA documents in ChromaDB vector store</div>
-          <div class="feature-item">Confidence-scored answers with exact section citations</div>
-          <div class="feature-item">Dataset Benchmarker: upload analytical data for regulatory assessment</div>
-          <div class="feature-item">Scored compliance checklist with priority recommendations</div>
-          <div class="feature-item">Guideline quotes surfaced inline with each finding</div>
-          <div class="feature-item">Model selector: Claude Sonnet / Opus / Haiku</div>
+          <div class="feature-item"><strong>Output Evaluation &amp; Confidence Scoring</strong></div>
+          <div class="feature-item">Every response includes a calibrated confidence score based on retrieval quality and source coverage</div>
+          <div class="feature-item">Automated self-evaluation layer that flags low-confidence answers before they reach the user</div>
+          <div class="feature-item">Confidence thresholds tuneable per use case — strict for regulatory submissions, flexible for exploratory queries</div>
+          <div class="feature-item"><strong>Citation Extraction &amp; Source Grounding</strong></div>
+          <div class="feature-item">Direct quotes extracted from source regulatory documents and surfaced inline with each answer</div>
+          <div class="feature-item">Exact section and paragraph references linked to ICH, FDA, EU GMP, and EMA guidance documents</div>
+          <div class="feature-item">Full audit trail — every claim is traceable back to a specific passage in the source corpus</div>
+          <div class="feature-item"><strong>Hallucination Prevention by Design</strong></div>
+          <div class="feature-item">Responses grounded exclusively in the retrieved regulatory document corpus — no unverified claims</div>
+          <div class="feature-item">Retrieval-first architecture ensures the LLM reasons over real documents, not parametric memory</div>
+          <div class="feature-item">Answers that cannot be supported by the source material are explicitly flagged rather than fabricated</div>
         </div>
 
         <div class="arch-diagram">
@@ -1198,6 +1204,15 @@
             <span class="arch-node">Claude LLM</span>
             <span class="arch-arrow">→</span>
             <span class="arch-node">Cited Answers + Scores</span>
+          </div>
+        </div>
+
+        <div class="tech-highlights">
+          <p class="arch-label">Technical Highlights</p>
+          <div class="feature-list">
+            <div class="feature-item"><strong>Evaluation framework:</strong> Confidence scoring calibrated against retrieval precision and document coverage, giving users a quantified reliability signal on every response</div>
+            <div class="feature-item"><strong>Guardrails &amp; safety:</strong> Retrieval-gated generation — the LLM cannot produce answers without supporting source material, eliminating fabricated regulatory guidance</div>
+            <div class="feature-item"><strong>Audit compliance:</strong> Full citation chain from user query → retrieved chunks → source document section, meeting traceability requirements for regulated industries</div>
           </div>
         </div>
 
