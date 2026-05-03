@@ -485,6 +485,10 @@
       margin-bottom: 28px;
     }
 
+    .feature-list.full-width {
+      grid-template-columns: 1fr;
+    }
+
     .feature-item {
       display: flex;
       align-items: flex-start;
@@ -1177,7 +1181,7 @@
           A RAG system grounded in ~60 ICH, FDA, EU GMP, and EMA regulatory documents, built for scientists and regulatory affairs teams who need precise, auditable answers from a large document corpus. Every response is evaluated with a calibrated confidence score, grounded in direct quotes with exact section citations, and constrained to the source corpus to prevent hallucination — designed for environments where accuracy is non-negotiable and every claim must be traceable.
         </p>
 
-        <div class="feature-list">
+        <div class="feature-list full-width">
           <div class="feature-item"><strong>Output Evaluation &amp; Confidence Scoring</strong></div>
           <div class="feature-item">Every response includes a calibrated confidence score based on retrieval quality and source coverage</div>
           <div class="feature-item">Automated self-evaluation layer that flags low-confidence answers before they reach the user</div>
@@ -1209,7 +1213,7 @@
 
         <div class="tech-highlights">
           <p class="arch-label">Technical Highlights</p>
-          <div class="feature-list">
+          <div class="feature-list full-width">
             <div class="feature-item"><strong>Evaluation framework:</strong> Confidence scoring calibrated against retrieval precision and document coverage, giving users a quantified reliability signal on every response</div>
             <div class="feature-item"><strong>Guardrails &amp; safety:</strong> Retrieval-gated generation — the LLM cannot produce answers without supporting source material, eliminating fabricated regulatory guidance</div>
             <div class="feature-item"><strong>Audit compliance:</strong> Full citation chain from user query → retrieved chunks → source document section, meeting traceability requirements for regulated industries</div>
